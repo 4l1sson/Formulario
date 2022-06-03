@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link href="formularioCSS.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="title">Formulario de cadastro</h1>
+    <p id="description" class="description"><strong> Coleta de dados</strong></p>
+    <hr>
+    <form id="survey-form">
+    <diV>
+    <label id="name-label" for="name">Nome</label><input type="text" name="name" id="name" class="form-control" placeholder="Entre com seu nome" required>
+      </div>
+      <diV>
+       <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Entre com seu email" required>
+      </diV>
+      <div>
+      <label id="number-label" for="number" >Numero</label>
+      <input id="number" type="number" id="number" class="form-control" min="1" max="99"placeholder="Entre com seu numero" required>
+      
+      </div>
+<section>
+  <h2>Qual destas forma é melhor de contatalo?</h2>
+      <label id="name"><input class="input-radio" type="radio" name="indoor-outdoor" value="1"   > Nome</label>
+        <label id="email"><p>  <input class="input-radio" type="radio" name="email-name" value="2" /> Email</label>
+            <label><p><input class="input-radio"type="radio" name="idade-email" value="3"/> Idade </p></label>
+  
+        </section>
+<h2>Mora em que pais?</h2>
+ <label id="name"><input id="indoor" type="checkbox" name="indoor-outdoor" value="indoor"   checked> Brasil</label>
+        <label id="email"><p>  <input id="email" type="checkbox" name="email-name" value="email" > Colombia</label>
+            <label><p><input id="number" type="checkbox" name="number-email" value="number"> Espanha </p></label>
+  
+        <fieldset><legend>
+          <textarea></textarea>
+          <h2><p>Indicaria esse formulario para alguem</p></h2>
+        </legend>
+        <select id="dropdown">
+          <option value="sim">Sim</option> 
+          <option value="nao">Nao</option>
+          </select>
+
+        <button type="submit" id="submit" class="submit-button">Enviar dados</button>
